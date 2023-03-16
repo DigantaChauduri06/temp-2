@@ -12,14 +12,15 @@ body {
   line-height: 1.5;
   color: #000;
   background-color: #fff;
-  height: 100%;
+  height: 100vh;
+  overflow: hidden;
 }
 
 .img-group {
   width: 100%;
   display: flex;
   justify-content: center;
-  margin-top: 7.375rem;
+  margin-top: 7.5rem;
   align-items: center;
 }
 .symbol-and {
@@ -34,7 +35,7 @@ body {
   border: 1px solid #e0e0e0;
   border-radius: 0.75rem;
   width: 31.25rem;
-  height: 12rem;
+  padding-bottom: 2.5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -44,6 +45,7 @@ body {
   font-weight: 400;
   font-size: 1.5rem;
   line-height: 2rem;
+  color: #181f33;
 }
 .btn-grp {
   width: 26.25rem;
@@ -60,7 +62,7 @@ body {
   border-radius: 0.625rem;
 }
 .btn-yes {
-  margin-right: 1.5rem;
+  margin-right: 1rem;
   background-color: transparent;
   border: 1px solid #0937b2;
   color: #0937b2;
@@ -68,18 +70,21 @@ body {
 .btn-no {
   background-color: #0937b2;
   color: #fff;
+  border: none;
 }
 .footer-contaner {
   display: flex;
   width: 100%;
   /* height: 100%; */
   align-items: flex-end;
+  position: absolute;
+  bottom: 0;
 }
 .foot-left-img {
-  width: 19.049rem;
+  width: 24.46rem;
 }
-.foot-right-img {
-  width: 19.049rem;
+.foot-right-img-2 {
+  width: 19.048rem;
 }
 .left-footer {
   flex: 1;
