@@ -25,6 +25,7 @@ body {
 }
 .symbol-and {
   margin: 0px 0.75rem;
+  color: #181f33;
 }
 .parent-logout {
   display: flex;
@@ -60,6 +61,10 @@ body {
   line-height: 1.5rem;
   font-size: 1.125rem;
   border-radius: 0.625rem;
+  vertical-align: middle;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 .btn-yes {
   margin-right: 1rem;
@@ -81,10 +86,12 @@ body {
   bottom: 0;
 }
 .foot-left-img {
-  width: 24.46rem;
+  width: 24.464375rem;
+  height: 24.6875rem;
 }
 .foot-right-img-2 {
-  width: 19.048rem;
+  width: 19.04875rem;
+  height: 19.22rem;
 }
 .left-footer {
   flex: 1;
