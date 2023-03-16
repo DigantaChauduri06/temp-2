@@ -55,16 +55,11 @@ body {
   margin-top: 1.5rem;
 }
 .btn {
-  width: 10.781rem;
-  height: 3.5rem;
   font-weight: 700;
   line-height: 1.5rem;
   font-size: 1.125rem;
   border-radius: 0.625rem;
-  vertical-align: middle;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
+  padding: 1rem 4.484375rem;
 }
 .btn-yes {
   margin-right: 1rem;
@@ -76,11 +71,12 @@ body {
   background-color: #0937b2;
   color: #fff;
   border: none;
+  padding-left: 4.609375rem;
+  padding-right: 4.609375rem;
 }
 .footer-contaner {
   display: flex;
   width: 100%;
-  /* height: 100%; */
   align-items: flex-end;
   position: absolute;
   bottom: 0;
