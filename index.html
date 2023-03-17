@@ -16,11 +16,11 @@
     <div class="parent-logout">
       <div class="logout-container">
         <h2 class="logout-main-header">Are you sure you want to logout?</h2>
-        <!-- <a href="" class="btn yes">Yes</a>
-          <a href="" class="btn no">No</a> -->
         <div class="btn-grp">
-          <button class="btn btn-yes">Yes</button>
-          <button class="btn btn-no">No</button>
+          <a href="" class="btn btn-yes">Yes</a>
+          <a href="" class="btn btn-no">No</a>
+          <!-- <button class="btn btn-yes" onclick="logout()">Yes</button>
+          <button class="btn btn-no">No</button> -->
         </div>
       </div>
     </div>
@@ -40,5 +40,11 @@
         />
       </div>
     </div>
+    <script>
+      window.history.forward();
+      window.onunload = function () {
+        null;
+      };
+    </script>
   </body>
 </html>
