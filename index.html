@@ -6,19 +6,120 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <title>Logout page</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400;1,700;1,900&display=swap");
+      /* Css Reset */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: "Lato", sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.5;
+        color: #000;
+        background-color: #fff;
+        height: 100vh;
+        overflow: hidden;
+      }
+
+      .img-group {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 7.5rem;
+        align-items: center;
+      }
+      .symbol-and {
+        margin: 0px 0.75rem;
+        color: #181f33;
+      }
+      .parent-logout {
+        display: flex;
+        justify-content: center;
+        margin-top: 2.5rem;
+      }
+      .logout-container {
+        border: 1px solid #e0e0e0;
+        border-radius: 0.75rem;
+        width: 31.25rem;
+        padding-bottom: 2.5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .logout-main-header {
+        margin-top: 2.5rem;
+        font-weight: 400;
+        font-size: 1.5rem;
+        line-height: 2rem;
+        color: #181f33;
+      }
+      .btn-grp {
+        width: 26.25rem;
+        display: flex;
+        justify-content: center;
+        margin-top: 1.5rem;
+      }
+
+      .btn {
+        font-weight: 700;
+        line-height: 1.5rem;
+        font-size: 1.125rem;
+        border-radius: 0.625rem;
+        padding: 1rem 4.484375rem;
+        cursor: pointer;
+        border: 1px solid #0937b2;
+        width: 10.78125rem;
+        height: 3.5rem;
+        display: inline-block;
+        text-decoration: none;
+      }
+      .btn-yes {
+        margin-right: 1rem;
+        background-color: transparent;
+        border: 1px solid #0937b2;
+        color: #0937b2;
+      }
+      .btn-no {
+        background-color: #0937b2;
+        color: #fff;
+        border: none;
+      }
+      .footer-contaner {
+        display: flex;
+        width: 100%;
+        align-items: flex-end;
+        position: absolute;
+        bottom: 0;
+      }
+      .foot-left-img {
+        width: 24.464375rem;
+        height: 24.6875rem;
+      }
+      .foot-right-img-2 {
+        width: 19.04875rem;
+        height: 19.22rem;
+      }
+      .left-footer {
+        flex: 1;
+      }
+    </style>
   </head>
   <body>
     <div class="img-group">
-      <img src="./Assets/MIS-full.svg" alt="MIS" class="img img-1" />
+      <img src="./assets/MIS-full.svg" alt="MIS" class="img img-1" />
       <span class="symbol-and">&</span>
-      <img src="./Assets/WIS-full.svg" alt="WIS" class="img img-2" />
+      <img src="./assets/WIS-full.svg" alt="WIS" class="img img-2" />
     </div>
     <div class="parent-logout">
       <div class="logout-container">
         <h2 class="logout-main-header">Are you sure you want to logout?</h2>
         <div class="btn-grp">
-          <a href="" class="btn btn-yes">Yes</a>
-          <a href="" class="btn btn-no">No</a>
+          <a href="logout" class="btn btn-yes">Yes</a>
+          <a class="btn btn-no" onclick="history.back()">No</a>
           <!-- <button class="btn btn-yes" onclick="logout()">Yes</button>
           <button class="btn btn-no">No</button> -->
         </div>
@@ -27,14 +128,14 @@
     <div class="footer-contaner">
       <div class="left-footer">
         <img
-          src="./Assets/left-img.svg"
+          src="./assets/left-img.svg"
           alt="Left Image"
           class="foot-img foot-left-img"
         />
       </div>
       <div class="right-footer">
         <img
-          src="./Assets/right-img.svg"
+          src="./assets/right-img.svg"
           alt="Right Image"
           class="foot-img foot-right-img-2"
         />
